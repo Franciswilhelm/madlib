@@ -27,4 +27,16 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#capitalization").submit(function(event) {
+    var whateverInput = $("input#whatevs").val();
+
+    var upperinput = whateverInput.toUpperCase();
+
+    $(".whatevs").text(upperinput);
+
+    $("#capitalresponse").show();
+
+    event.preventDefault();
+  });
 });
